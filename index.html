@@ -1,0 +1,41 @@
+<html lang="en">
+
+<head>
+	<title></title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
+	<script src="script.js"></script>
+</head>
+
+<body>
+	<div class="container-fluid">
+		<h1 class="text-center">Twitter Sentiment Analysis</h1>
+		<h5 class="text-center">Search for tweets and view their Sentiment Polarity</h5>
+		<form>
+			<div class="input-group col-md-4" style="margin: auto;">
+				<input type="text" class="form-control" placeholder="Search" id="query">
+				<div class="input-group-btn">
+					<button class="btn btn-default" type="submit" id="search">
+						<i class="glyphicon glyphicon-search"></i>
+					</button>
+				</div>
+			</div>
+		</form>
+	</div>
+	
+	<div id="tweet-count" class="panel panel-body row">
+		<div class="text-center col-md-12" id="total-tweets"></div>
+		<div class="text-center col-md-4" id="neutral-tweets"></div>
+		<div class="text-center col-md-4" id="positive-tweets"></div>
+		<div class="text-center col-md-4" id="negative-tweets"></div>
+	</div>
+	<div class="jumbotron">
+		<div id="tweet" class="container-fluid">
+		</div>
+	</div>
+	
+</body>
+</html>
